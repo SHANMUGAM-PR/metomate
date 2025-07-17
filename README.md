@@ -34,32 +34,7 @@ With clean UI/UX and API integration, users can search any city and view its wea
 
 ## Project Structure
 
-metomate/
-├── build/                  # Build output folder
-├── node_modules/           # Installed dependencies
-├── public/                 # Static files
-├── src/                    # Source files
-│   ├── components/         # Weather components
-│   │   ├── HourlyWeather.js
-│   │   ├── HourlyWeather.css
-│   │   ├── WeeklyWeather.js
-│   │   ├── WeeklyWeather.css
-│   │   ├── TodayWeather.js
-│   │   ├── SearchBar.js
-│   │   └── WeatherInfo.css
-│   ├── News/               # News components
-│   │   ├── NavNews.js
-│   │   ├── NavNews.css
-│   │   ├── WeatherNews.js
-│   │   └── WeatherNews.css
-│   ├── WeatherService.js   # Weather API services
-│   ├── App.js              # Main app component
-│   ├── App.css             # Global styles
-│   └── index.js            # React DOM render entry
-├── .gitignore              # Git ignore file
-├── config-overrides.js     # CRA config overrides
-├── package.json            # Project metadata and dependencies
-└── README.md               # Project documentation
+<pre><code>metomate/ ├── build/ # Build output folder ├── node_modules/ # Installed dependencies ├── public/ # Static files (HTML, icons) ├── src/ │ ├── components/ │ │ ├── HourlyWeather.js / .css │ │ ├── WeeklyWeather.js / .css │ │ ├── TodayWeather.js │ │ ├── SearchBar.js │ │ └── WeatherInfo.css │ ├── News/ │ │ ├── NavNews.js / .css │ │ └── WeatherNews.js / .css │ ├── WeatherService.js # All API services │ ├── App.js # Root App Component │ ├── App.css # Global styles │ └── index.js # Main render entry ├── .gitignore ├── config-overrides.js # Custom config for CRA ├── package.json └── README.md </code></pre>
 
 
 ---
