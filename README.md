@@ -35,31 +35,32 @@ With clean UI/UX and API integration, users can search any city and view its wea
 ## Project Structure
 
 metomate/
-  build/                  - Build output folder
-  node_modules/           - Installed dependencies
-  public/                 - Static files like index.html
-  src/
-    components/           - Weather components
-      HourlyWeather.js
-      HourlyWeather.css
-      WeeklyWeather.js
-      WeeklyWeather.css
-      TodayWeather.js
-      SearchBar.js
-      WeatherInfo.css
-    News/                 - News-related components
-      NavNews.js
-      NavNews.css
-      WeatherNews.js
-      WeatherNews.css
-    WeatherService.js     - Handles weather & news API calls
-    App.js                - Main React App component
-    App.css               - Global styling
-    index.js              - ReactDOM render entry point
-  .gitignore              - Git ignored files
-  config-overrides.js     - Custom Create React App config
-  package.json            - Project metadata and dependencies
-  README.md               - Project documentation
+├── build/                  # Build output folder
+├── node_modules/           # Installed dependencies
+├── public/                 # Static files
+├── src/                    # Source files
+│   ├── components/         # Weather components
+│   │   ├── HourlyWeather.js
+│   │   ├── HourlyWeather.css
+│   │   ├── WeeklyWeather.js
+│   │   ├── WeeklyWeather.css
+│   │   ├── TodayWeather.js
+│   │   ├── SearchBar.js
+│   │   └── WeatherInfo.css
+│   ├── News/               # News components
+│   │   ├── NavNews.js
+│   │   ├── NavNews.css
+│   │   ├── WeatherNews.js
+│   │   └── WeatherNews.css
+│   ├── WeatherService.js   # Weather API services
+│   ├── App.js              # Main app component
+│   ├── App.css             # Global styles
+│   └── index.js            # React DOM render entry
+├── .gitignore              # Git ignore file
+├── config-overrides.js     # CRA config overrides
+├── package.json            # Project metadata and dependencies
+└── README.md               # Project documentation
+
 
 ---
 
