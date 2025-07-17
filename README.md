@@ -36,29 +36,30 @@ With clean UI/UX and API integration, users can search any city and view its wea
 
 metomate/
 ├── build/                  # Build output folder
-├── node_modules/           # Dependencies
-├── public/                 # Static assets (index.html, favicon, etc.)
-├── src/                    # Source code
-│   ├── components/         # Main weather components
-│   │   ├── HourlyWeather.js / .css
-│   │   ├── WeeklyWeather.js / .css
+├── node_modules/           # Installed dependencies
+├── public/                 # Static files
+├── src/                    # Source files
+│   ├── components/         # Weather components
+│   │   ├── HourlyWeather.js
+│   │   ├── HourlyWeather.css
+│   │   ├── WeeklyWeather.js
+│   │   ├── WeeklyWeather.css
 │   │   ├── TodayWeather.js
 │   │   ├── SearchBar.js
 │   │   └── WeatherInfo.css
-│   │
-│   ├── News/               # News modules
-│   │   ├── NavNews.js / .css
-│   │   └── WeatherNews.js / .css
-│   │
-│   ├── WeatherService.js   # All API services
-│   ├── App.js              # Main App entry
+│   ├── News/               # News components
+│   │   ├── NavNews.js
+│   │   ├── NavNews.css
+│   │   ├── WeatherNews.js
+│   │   └── WeatherNews.css
+│   ├── WeatherService.js   # Weather API services
+│   ├── App.js              # Main app component
 │   ├── App.css             # Global styles
-│   └── index.js            # ReactDOM render
-│
-├── .gitignore
-├── config-overrides.js     # Custom CRA config
-├── package.json
-└── README.md
+│   └── index.js            # React DOM render entry
+├── .gitignore              # Git ignore file
+├── config-overrides.js     # CRA config overrides
+├── package.json            # Project metadata and dependencies
+└── README.md               # Project documentation
 
 
 ---
