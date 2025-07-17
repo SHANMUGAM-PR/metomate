@@ -1,0 +1,46 @@
+/* WeeklyWeather.css */
+
+.weekly-weather-container {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px; /* Limit the width for better readability */
+    margin: 20px auto; /* Center the container */
+  }
+  
+  .weekly-weather-container h2 {
+    font-size: 24px;
+    text-align: center; /* Center the heading */
+    color: #333; /* Dark color for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+  }
+  
+  .weekly-weather-card {
+    background-color: #fff; /* White background for each card */
+    border: 1px solid #ccc; /* Light border for card */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding inside the card */
+    margin-bottom: 15px; /* Space between cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  }
+  
+  .weekly-weather-card img {
+    width: 50px; /* Set a size for the weather icon */
+    height: 50px; /* Set a size for the weather icon */
+    display: block; /* Block to center align the icon */
+    margin: 0 auto 10px; /* Center and space below the icon */
+  }
+  
+  .weekly-weather-card p {
+    margin: 5px 0; /* Space between paragraphs */
+    font-size: 16px; /* Font size for text */
+    color: #555; /* Grey color for text */
+  }
+  
+  .error-message {
+    color: red; /* Red color for error messages */
+    text-align: center; /* Center the error message */
+    margin: 20px 0; /* Space around the error message */
+  }
+  

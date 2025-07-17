@@ -1,38 +1,191 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Updated style for the overall app container */
+.app-container {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  min-height: 150px; /* Increase the min-height for more space */
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Updated Header Section with App Name and Search Bar */
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  height: 40px;
+  background-color: #f4f4f9;
+  margin-top: 10px; /* Adds space above the header */
+  margin-bottom: 10px; /* Adds space below the header */
+}
+
+
+/* Style for the app name container */
+.app-name {
+  display: flex;
+  justify-content: center; /* Centers the text horizontally */
+  align-items: center; /* Centers the text vertically */
+  height: 70px; /* Adjust height as needed */
+  padding: 0; /* Adds some padding around the text */
+}
+
+/* Style for the app name heading (h1) */
+.app-name h1 {
+  font-family: 'Arial', sans-serif; /* Clean, professional font */
+  font-size: 32px; /* Adjust based on your layout */
+  font-weight: bold; /* Make it bold to stand out */
+  color: #ff9900; /* Color matches your brand */
+  letter-spacing: 1.5px; /* Adds some spacing between letters */
+  text-transform: uppercase; /* Makes the text all uppercase */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* No padding inside the heading */
+}
+
+/* Style for the search bar form container */
+.search-bar-form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 500px; /* Set the max width */
+  position: relative; /* Allows positioning of button or icon */
+  margin-left: 40px; /* Small margin to space it out from the app name */
+  margin-top: 20px; /* Adds space above the search bar */
+  margin-bottom: 20px; /* Adds space below the search bar */
+}
+
+/* Style for the input field */
+.search-bar-form input.search-input {
+  width: 100%;
+  padding: 10px 40px 10px 20px; /* Add padding, especially on the right for the button */
+  font-size: 16px;
+  border: 1px solid #ccc; /* Subtle border */
+  border-radius: 25px; /* Rounded corners */
+  background-color: #f4f4f9; /* Light background */
+  color: #333; /* Text color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow */
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* Focus state for input */
+.search-bar-form input.search-input:focus {
+  outline: none;
+  border-color: #ff9900; /* Highlight border on focus */
+  box-shadow: 0 0 5px rgba(255, 153, 0, 0.5); /* Glowing effect on focus */
+}
+
+/* Style for the search button */
+.search-bar-form button.search-button {
+  position: absolute;
+  right: 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff9900; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  border-radius: 0 25px 25px 0; /* Rounded corners on the right */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover state for the button */
+.search-bar-form button.search-button:hover {
+  background-color: #e68a00; /* Darker shade on hover */
+}
+
+/* Updated Navigation bar style */
+.navbar {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  width: 100%;
+  background-color: #333;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
   color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 15px;
+  padding: 8px 16px;
+  border-radius: 25px; /* Rounded corners */
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar a:hover {
+  background-color: #555;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Component data styling */
+.component-data {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .search-bar {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .search-bar input[type="text"] {
+    width: 100%;
+    margin-bottom: 6px;
+  }
+
+  .search-bar button {
+    width: 100%;
+  }
+
+  .navbar {
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a {
+    margin-bottom: 10px;
+  }
+
+  .component-data {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .search-bar input[type="text"] {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .search-bar button {
+    width: 100%;
+  }
+
+  .component-data {
+    padding: 10px;
   }
 }

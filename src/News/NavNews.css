@@ -1,0 +1,94 @@
+/* News Container */
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/* News Card */
+.news-card {
+    display: flex;
+    width: 48%; /* Take 48% of the width to make it look like a grid */
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.news-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Container */
+.image-container {
+    width: 35%; /* Ensure the image takes up 35% of the card's width */
+    overflow: hidden;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+/* Content Container */
+.content-container {
+    padding: 15px;
+    width: 65%; /* The content takes up the remaining 65% of the card */
+}
+
+.content-container h2 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+.content-container p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.content-container a {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content-container a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .news-card {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .image-container {
+        width: 100%;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .image-container img {
+        border-radius: 8px 8px 0 0;
+    }
+
+    .content-container {
+        width: 100%;
+        padding: 10px;
+    }
+}

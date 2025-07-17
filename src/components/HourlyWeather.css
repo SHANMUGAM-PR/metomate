@@ -1,0 +1,51 @@
+.hourly-weather-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto; /* Center the container */
+    padding: 20px;
+    background-color: #f4f4f9; /* Light background color */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hourly-weather-container h2 {
+    text-align: center;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .hourly-weather-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white; /* Card background */
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .weather-icon {
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+  }
+  
+  .time {
+    font-weight: bold;
+  }
+  
+  .temperature {
+    font-size: 24px;
+    color: #ff9900; /* Temperature color */
+    font-weight: bold;
+  }
+  
+  .weather-condition {
+    color: #555; /* Color for the weather condition text */
+  }
+  
+  .humidity, .precipitation, .wind-speed {
+    font-size: 14px;
+    color: #666; /* Subtle color for additional info */
+  }
+  

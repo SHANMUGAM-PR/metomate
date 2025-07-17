@@ -1,70 +1,142 @@
-# Getting Started with Create React App
+# MetoMate - Weather Forecast & News Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**MetoMate** is a responsive, full-featured weather application built with **React.js** that provides:
+- Real-time weather conditions
+- Hourly & weekly forecasts
+- Latest weather-related news from India
 
-## Available Scripts
+With clean UI/UX and API integration, users can search any city and view its weather insights with ease.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Search** any city to get its weather instantly
+- **Today's weather** with temperature, condition, wind info
+- **Hourly forecast** with humidity, precipitation, wind
+- **Weekly forecast** with daily temperature highs/lows
+- **Live weather news** (fetched from NewsAPI)
+- **Routing** using React Router
+- **Auto-refresh news** every 2 hours / 5 minutes (NavNews)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React.js** - Frontend framework used to build the user interface.
+- **React Router** - For page routing and navigation between components.
+- **Axios** - Used for making API calls to fetch weather and news data.
+- **WeatherAPI.com** - Source of real-time, hourly, and weekly weather data.
+- **NewsAPI.org** - Provides the latest weather-related news articles.
+- **CSS3** - Custom styling for a clean and responsive UI.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Project Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+metomate/
+│
+├── build/ # Build output folder
+├── node_modules/ # Dependencies
+├── public/ # Static assets
+├── src/
+│ ├── components/ # Main weather components
+│ │ ├── HourlyWeather.js/.css
+│ │ ├── WeeklyWeather.js/.css
+│ │ ├── TodayWeather.js
+│ │ ├── SearchBar.js
+│ │ └── WeatherInfo.css
+│ │
+│ ├── News/ # News modules
+│ │ ├── NavNews.js/.css
+│ │ └── WeatherNews.js/.css
+│ │
+│ ├── WeatherService.js # All API services
+│ ├── App.js # Main app entry
+│ ├── App.css # Global styles
+│ ├── index.js # ReactDOM render
+│ └── ...others
+│
+├── .gitignore
+├── config-overrides.js # Custom CRA config
+├── package.json
+└── README.md # This file
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Installation & Setup
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Follow the steps below to run this project locally:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Step 1: Clone the Repository
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+git clone https://github.com/SHANMUGAM-PR/metomate.git
+cd metomate
+```
 
-## Learn More
+### Step 2: Install Dependencies
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Step 3: Configure API Keys
 
-### Code Splitting
+You need API keys from [WeatherAPI](https://www.weatherapi.com/) and [NewsAPI](https://newsapi.org/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Create a `.env` file in the root of the project and add:
 
-### Analyzing the Bundle Size
+```env
+REACT_APP_WEATHER_API_KEY=your_weatherapi_key
+REACT_APP_NEWS_API_KEY=your_newsapi_key
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Then in your code, access them like:
 
-### Making a Progressive Web App
+```js
+const weatherKey = process.env.REACT_APP_WEATHER_API_KEY;
+const newsKey = process.env.REACT_APP_NEWS_API_KEY;
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+> Make sure to restart the development server after setting environment variables.
 
-### Advanced Configuration
+### Step 4: Start the Development Server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+npm start
+```
 
-### Deployment
+Visit: [http://localhost:3000](http://localhost:3000)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## Author
+
+![Profile](https://github.com/SHANMUGAM-PR)
+
+### **Shanmugam P R**  
+ B.Tech IT Student |  Developer |  Placement Aspirant  
+ Tamil Nadu, India
+
+- [GitHub](https://github.com/SHANMUGAM-PR)
+- [LinkedIn](https://www.linkedin.com/in/shanmugam-p-r-53331525a/)
+
+
+---
+
+## Contribution
+
+Feel free to fork this repo and raise a pull request. Contributions are welcome!
+
+```bash
+# Fork the repo
+git clone https://github.com/your-username/metomate.git
+```
+
+---
+

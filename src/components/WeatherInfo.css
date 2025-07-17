@@ -1,0 +1,166 @@
+/* Container for the weather card */
+.weather-card {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 750px; /* Adjusted width for a larger display */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Left side: temperature, weather condition, and location */
+.weather-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.weather-left {
+    text-align: left;
+    flex: 1;
+    padding-right: 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+.weather-left h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+    line-height: 1.2;
+    background-color: #ebebeb;
+}
+
+/* New CSS for location */
+.weather-card .location {
+    font-size: 24px;
+    color: #444;
+    
+    margin-bottom: 10px;
+    font-weight: bold;
+    background-color: #fffefe;
+    
+    
+}
+
+
+/* Temperature styling */
+.weather-left .temperature {
+    font-size: 80px;
+    font-weight: bold;
+    color: #ffcc00;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Weather condition icon */
+.weather-left .temperature .icon {
+    margin-right: 15px;
+    font-size: 80px; /* Larger icon */
+}
+
+/* New styling for time */
+.weather-left .time {
+    font-size: 20px;
+    color: #555;
+    margin-top: 5px;
+    font-weight: normal;
+}
+
+
+/* Condition text (e.g., "Partly cloudy") */
+.weather-left .condition {
+    font-size: 22px;
+    color: #555;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+/* RealFeel styling */
+.weather-left .realfeel {
+    font-size: 18px;
+    color: #888;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.weather-left .realfeel span {
+    color: #ffcc00; /* Make RealFeel stand out */
+}
+
+/* Right side: additional weather details */
+.weather-right {
+    flex: 1;
+    text-align: right;
+    border-left: 1px solid #eee;
+    padding-left: 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Label styling for additional info */
+.weather-right p {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.weather-right .label {
+    font-weight: bold;
+    color: #555;
+}
+
+/* Air Quality styling */
+.weather-right .air-quality {
+    color: #28a745;
+    font-size: 20px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .weather-card {
+        flex-direction: column;
+        width: 90%;
+        padding: 20px;
+    }
+
+    .weather-left,
+    .weather-right {
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .weather-right {
+        border-left: none;
+    }
+
+    .weather-left .temperature {
+        font-size: 60px;
+    }
+
+    .weather-left .temperature .icon {
+        font-size: 60px;
+    }
+
+    .weather-left .realfeel {
+        font-size: 16px;
+    }
+
+    .weather-right .details {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    .weather-right .wind,
+    .weather-right .gusts,
+    .weather-right .air-quality {
+        font-size: 16px;
+    }
+}

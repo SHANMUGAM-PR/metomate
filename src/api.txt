@@ -1,0 +1,6 @@
+apiname-newsapi
+weathernews.js
+https://newsapi.org/
+key-b421a4dd9a854a44b2b80075d0c5d734
+
+-------------------------------------------------------
